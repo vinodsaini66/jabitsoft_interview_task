@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn-primary {
+  background-color: #dc2626 !important;
+}
+
+.ant-input-prefix {
+  margin-right: 8px;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-input,
+.ant-input-password {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.ant-input:focus,
+.ant-input-password:focus {
+  border-color: #dc2626 !important;
+  box-shadow: none !important;
+}
+
+.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ant-checkbox-wrapper {
+  color: #9ca3af !important;
+}
+
+.ant-layout {
+  background: black !important;
+}
+
+.ant-typography {
+  color: #9ca3af !important;
+}
+
+.ant-btn-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-btn-text:hover {
+  color: #dc2626 !important;
+  background: transparent !important;
+}
+
+header.ant-layout-header {
+  border-bottom: 1px solid #991b00;
+  border-top: 8px solid #991b00;
+}
+
+footer.ant-layout-footer {
+  border-bottom: 8px solid #991b00;
+  border-top: 1px solid #991b00;
+}
+
+.custom-btn-main button {
+  width: 100%;
+}
+
+.ant-form-item-control input#password {
+  background: transparent !important;
+}
+
+.ant-layout main.ant-layout-content {
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+
+input#email::placeholder,
+input#password::placeholder {
+  color: #ccc !important;
+}
+
+span.ant-input-affix-wrapper {
+  background: #ffffff !important;
+  border-radius: .25rem;
+  flex-direction: row-reverse;
+  padding: 0;
+}
+
+.ant-layout .ant-form .ant-form-item {
+  margin-bottom: 15px;
+}
+
+span.ant-input-affix-wrapper input {
+  padding: 8px 15px !important;
+  color: #000 !important;
+}
+
+span.ant-input-affix-wrapper input::placeholder {
+  color: #ccc !important;
+}
+
+span.ant-input-affix-wrapper span.ant-input-suffix {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+}
+
+.ant-form-item .ant-input-affix-wrapper span.ant-input-prefix {
+  margin: 0;
+  padding: 10px;
+  background: #eee;
+  border-left: 1px solid #d3cfcf;
+}
+
+.ant-form-item .ant-form-item-control label.ant-checkbox-wrapper {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.ant-form-item .ant-form-item-control button.ant-btn {
+  border-radius: 100px;
+  padding: 12px 24px !important;
+  height: unset;
+}
+
+.ant-form-item .ant-form-item-control-input {
+  min-height: unset !important;
+}
+
+.ant-form-item .ant-input-affix-wrapper span.ant-input-prefix svg {
+  width: 100%;
+  max-width: 25px;
+  padding: 0 3px;
+}
+
+.footer-custtm-btn button {
+  width: 100%;
+}
+
+.ant-layout-content .ant-typography {
+  color: #fff !important;
+  font-size: 16px;
+}
+
+span.ant-dropdown-menu-title-content span {
+  color: #000;
+}
+
+.site-loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+}
+
+.site-loader:before,
+.site-loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+
+.site-loader:after {
+  color: #FF3D00;
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
+
+.footer {
+  padding: 12px;
+  border-bottom: 8px solid #991b00;
+  border-top: 1px solid #991b00;
+}
+
+.ant-form-item-additional {
+  margin: 5px 0 10px 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
